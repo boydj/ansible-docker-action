@@ -7,8 +7,8 @@ inputs:
 outputs:
   output:
     description: The captured output of both stdout and stderr from the Ansible Playbook run
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
-    args:
-      - ${{ inputs.playbook }}
+runs:
+  using: 'docker'
+   image: 'Dockerfile'
+  args:
+   - ${{ inputs.playbook }}
