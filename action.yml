@@ -1,0 +1,14 @@
+name: Run Ansible playbook
+description: Execute Ansible playbook on selected hosts
+inputs:
+  playbook:
+    description: Ansible playbook filepath
+    required: true
+outputs:
+  output:
+    description: The captured output of both stdout and stderr from the Ansible Playbook run
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+      - ${{ inputs.playbook }}

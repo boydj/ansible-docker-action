@@ -1,1 +1,21 @@
+# Ansible docker action
 
+This action executes an ansible-playbook
+
+## Inputs
+
+## `playbook`
+
+**Required** Ansible playbook filepath
+
+## Outputs
+
+## `output`
+
+The captured output of both stdout and stderr from the Ansible Playbook run
+
+## Example usage
+
+uses: actions/ansible-docker-action
+with:
+  playbook: 'site.yml'
