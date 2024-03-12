@@ -16,6 +16,6 @@ The captured output of both stdout and stderr from the Ansible Playbook run
 
 ## Example usage
 
-uses: actions/ansible-docker-action
+uses: boydj/ansible-docker-action
 with:
   playbook: 'site.yml'
